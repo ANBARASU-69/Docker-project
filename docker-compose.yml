@@ -3,9 +3,9 @@ services:
     image: postgres:16-alpine
     restart: unless-stopped
     environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: anbu
+      POSTGRES_PASSWORD: anbu05
+      POSTGRES_DB: tododb
     volumes:
       - pgdata:/var/lib/postgresql/data   # data survives container restarts
     networks:
